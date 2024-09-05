@@ -49,6 +49,7 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
+      autostart = false,
       require "configs.lspconfig"
     end,
   },
