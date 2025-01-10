@@ -1,10 +1,10 @@
 -- load defaults i.e lua_lsp
 require("nvchad.configs.lspconfig").defaults()
-
+require("mason").setup()
+require("mason-lspconfig").setup()
 local lspconfig = require "lspconfig"
-
 -- EXAMPLE
-local servers = { "html", "cssls" }
+local servers = { "html", "cssls", "rust_analyzer", "yamlls", "pylsp", "bashls" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
